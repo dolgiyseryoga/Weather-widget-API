@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather widget/ FE 127 / Dolgiy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="witget">
+            <div class="widget_item">
+                <h1 class="package-name"></h1>
+                <span class="head_span">
+                    <p id="head" class="head">Weather widget</p>
+                    <img id="head2" class="head_img" src="./img/umbrella.png">
+                </span>
+            </div>
+            <div class="widget_item2">
+                <span class="features"></span>
+                <span class="date_span">
+                    <p class="date"></p>
+                    <p class="date_row"></p>
+                </span>
+                <p class="temp"></p>
+                <p class="desclaimer"></p>
+                <p class="wind"></p>
+            </div>
+            <hr class="line">
+            <div class="widget_item_futer">
+                <form id="sity_form">
+                    <p class="sity_form_p">Enter city</p>
+                    <input type="text" id="sity_input">
+                    <span class="sity_span" onclick="Sity_add(), hide()">ОК</span>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
